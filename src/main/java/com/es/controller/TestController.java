@@ -1,0 +1,21 @@
+package com.es.controller;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/api")
+public class TestController {
+	
+	@GetMapping("/")
+	public Map<String , Object> testRoute(){
+		Map<String, Object> mp = new HashMap<>();
+		mp.put("name", "Subhradeep");
+		mp.put("role", "Java Developer");
+		return mp;
+	}
+}
