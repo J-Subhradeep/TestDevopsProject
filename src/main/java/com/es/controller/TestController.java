@@ -14,7 +14,7 @@ public class TestController {
 	@GetMapping("/")
 	public Map<String , Object> testRoute(){
 		Map<String, Object> mp = new HashMap<>();
-		mp.put("name", "Subhradeep");
+		mp.put("name", "Subhradeep Pal");
 		mp.put("role", "Java Developer");
 		return mp;
 	}
